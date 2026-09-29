@@ -2,7 +2,7 @@ CC=g++
 
 MAKEFLAGS := --jobs=$(shell nproc)
 
-CFLAGS= -shared -fPIC -g
+CFLAGS= -shared -fPIC -g -Ithirdparty/SDL/include
 
 LDFLAGS= -static-libstdc++ -static-libgcc -lvulkan libs/funchook/build/libfunchook.a libs/funchook/build/libdistorm.a -g
 
